@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store | Register</title>
+
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gradient-to-br from-gray-950 via-black to-gray-900 text-white font-sans">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-black/30 backdrop-blur-md border-b border-white/10 shadow-xl">
+        <nav class="max-w-7xl mx-auto flex justify-center py-5">
+            <a href="register.html">
+                <img src="images/logo.jpg"
+                    alt="Game Store Logo"
+                    class="w-20 hover:scale-105 transition duration-300">
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="min-h-screen flex items-center justify-center px-6 py-12">
+
+        <form
+            class="w-full max-w-xl bg-gray-900/80 backdrop-blur-md border border-gray-700 rounded-2xl shadow-2xl p-8">
+
+            <!-- Title -->
+            <div class="text-center mb-8">
+                <h1 class="text-4xl text-red-600">
+                    Create Account
+                </h1>
+
+                <p class="text-gray-400 mt-2">
+                    Join thousands of gamers and start building your collection.
+                </p>
+            </div>
+
+            <!-- Names -->
+            <div class="grid md:grid-cols-2 gap-5">
+
+                <!-- First Name -->
+                <div class="fnameDiv">
+
+                    <label for="fname" class="block mb-2 text-sm text-gray-300">
+                        First Name
+                    </label>
+
+                    <div class="relative">
+
+                        <i class="fa-solid fa-user absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
+
+                        <input
+                            type="text"
+                            id="fname"
+                            placeholder="John"
+                            class="w-full pl-11 pr-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-600 transition-all">
+
+                    </div>
+
+                    <div class="validation hidden mt-2">
+                        <small class="block text-gray-400">
+                            Name must be at least 3 characters.
+                        </small>
+
+                        <small class="text-red-500">
+                            <i class="fa-regular fa-circle-xmark"></i>
+                            Invalid input
+                        </small>
+                    </div>
+
+                </div>
+
+                <!-- Last Name -->
+                <div class="lnameDiv">
+
+                    <label for="lname" class="block mb-2 text-sm text-gray-300">
+                        Last Name
+                    </label>
+
+                    <div class="relative">
+
+                        <i class="fa-solid fa-user absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
+
+                        <input
+                            type="text"
+                            id="lname"
+                            placeholder="Doe"
+                            class="w-full pl-11 pr-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-600 transition-all">
+
+                    </div>
+
+                    <div class="validation hidden mt-2">
+                        <small class="block text-gray-400">
+                            Name must be at least 3 characters.
+                        </small>
+
+                        <small class="text-red-500">
+                            <i class="fa-regular fa-circle-xmark"></i>
+                            Invalid input
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Email -->
+            <div class="emailDiv mt-5">
+
+                <label for="email" class="block mb-2 text-sm text-gray-300">
+                    Email Address
+                </label>
+
+                <div class="relative">
+
+                    <i class="fa-solid fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="example@email.com"
+                        class="w-full pl-11 pr-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-600 transition-all">
+
+                </div>
+
+                <div class="validation hidden mt-2">
+                    <small class="block text-gray-400">
+                        Email must contain '@' and '.'
+                    </small>
+
+                    <small class="text-red-500">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                        Invalid input
+                    </small>
+                </div>
+
+            </div>
+
+            <!-- Password -->
+            <div class="passDiv mt-5">
+
+                <label for="password" class="block mb-2 text-sm text-gray-300">
+                    Password
+                </label>
+
+                <div class="relative">
+
+                    <i class="fa-solid fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        class="w-full pl-11 pr-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-600 transition-all">
+
+                </div>
+
+                <div class="validation hidden mt-2">
+                    <small class="block text-gray-400">
+                        Password must be at least 8 characters.
+                    </small>
+
+                    <small class="text-red-500">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                        Invalid input
+                    </small>
+                </div>
+
+            </div>
+
+            <!-- Button -->
+            <button
+                id="signup"
+                type="submit"
+                class="w-full bg-red-600 hover:bg-red-700 mt-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300">
+                Create Account
+            </button>
+
+            <!-- Login -->
+            <p class="text-center text-gray-400 mt-6">
+                Already have an account?
+
+                <a
+                    href="login.html"
+                    class="text-red-500 hover:text-red-400 font-semibold transition">
+                    Login
+                </a>
+            </p>
+
+        </form>
+
+    </main>
+
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>

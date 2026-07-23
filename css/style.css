@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#cart_product::-webkit-scrollbar {
+    width: 6px;
+}
+
+#cart_product::-webkit-scrollbar-thumb {
+    background: #dc2626;
+    border-radius: 10px;
+
+}
+
+#cart_product::-webkit-scrollbar-track {
+    background: #111827;
+}
+#cart_product{
+    scrollbar-gutter: stable;
+}
+
+@font-face {
+    font-family: "GameFont1";
+    src: url("../fonts/Games.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2 {
+    font-family: "GameFont1", sans-serif;
+}
+
+
+.footer {
+    background: #0E0E15;
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 25px;
+    background: #090910;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #232334;
+}
+
+.footer-bottom span,
+.footer-bottom p {
+    line-height: 30px;
+}
+
+.footer-bottom span i {
+    animation: beat 1s infinite ease-in-out;
+
+}
+
+@keyframes beat {
+
+    0%,
+    100% {
+        transform: scale(1);
+        color: #6E1313;
+    }
+
+    25% {
+        transform: scale(1.3);
+        color: #E10600;
+    }
+
+    40% {
+        transform: scale(0.95);
+        color: #6E1313;
+    }
+
+    60% {
+        transform: scale(1.2);
+        color: #E10600;
+    }
+}
