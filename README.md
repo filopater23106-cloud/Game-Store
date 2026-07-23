@@ -62,7 +62,7 @@ This project demonstrates responsive web design, DOM manipulation, form validati
 
 🌐 **Visit the Website**
 
-🔗 https://your-live-demo-link.com
+🔗 [https://your-live-demo-link.com](https://filopater23106-cloud.github.io/Game-Store/)
 
 ---
 
@@ -332,6 +332,6 @@ Special thanks to the following technologies and communities:
 
 If you enjoyed this project, please consider giving it a ⭐ on GitHub.
 
-**Made with ❤️ by Filopater Shehata Mina**
+**Made with ❤️ by Filopater Shehata**
 
 </div>
